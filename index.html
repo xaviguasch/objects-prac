@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h2>OBJECTS</h2>
+    <input type="text" name="first" value="xavi" />
     <script>
       const age = 100
       const xavi = {
@@ -23,7 +23,7 @@
           shirts: 10,
           pants: 2,
         },
-        sayHello: function (greeting = 'Hey') {
+        sayHello(greeting = 'Hey') {
           return `${greeting} ${this.name}`
         },
       }
@@ -35,6 +35,16 @@
       // const properyToCheck = prompt('What do you want to check?');
       // console.log(properyToCheck);
       // console.log(xavi[properyToCheck]);
+
+      const nameInput = document.querySelector('[name="first"]')
+
+      const name = nameInput.value
+
+      console.log(name)
+
+      // console.log(delete xavi.job);
+      // wes.age = undefined;
+      // wes.age = null;
     </script>
   </body>
 </html>
