@@ -43,8 +43,39 @@
       console.log(name)
 
       // console.log(delete xavi.job);
-      // wes.age = undefined;
-      // wes.age = null;
+      // xavi.age = undefined;
+      // xavi.age = null;
+
+      let name1 = 'xavi'
+      let name2 = 'xavi'
+
+      console.log(name1 === name2)
+      name1 = 'scott'
+      console.log(name1 === name2)
+      // update name1 to be what is name2
+      name1 = name2
+      console.log(name1 === name2)
+      name2 = name1
+      name2 = 'xavier'
+
+      const person1 = {
+        first: 'xavi',
+        last: 'guasch',
+        clothing: {
+          shirts: 10,
+          pants: 2,
+        },
+      }
+      const person2 = {
+        first: 'xavi',
+        last: 'guasch',
+      }
+
+      // const person3 = person1;
+      // person3.first = 'Larry';
+      // console.log(person3.first);
+      // console.log(person1.first);
+      // const person3 = { ...person1 };
     </script>
   </body>
 </html>
