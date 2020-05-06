@@ -10,7 +10,31 @@
   <body>
     <h2>OBJECTS</h2>
     <script>
-      console.log('testing!!')
+      const age = 100
+      const xavi = {
+        age,
+        name: 'xavi',
+        properyToCheck: 'NEVER',
+        'cool-dude': true,
+        'really cool': false,
+        '777': true,
+        dog: 'snicker',
+        clothing: {
+          shirts: 10,
+          pants: 2,
+        },
+        sayHello: function (greeting = 'Hey') {
+          return `${greeting} ${this.name}`
+        },
+      }
+
+      xavi.job = 'Web Developer'
+      xavi.age = 50
+
+      console.log(xavi.age)
+      // const properyToCheck = prompt('What do you want to check?');
+      // console.log(properyToCheck);
+      // console.log(xavi[properyToCheck]);
     </script>
   </body>
 </html>
