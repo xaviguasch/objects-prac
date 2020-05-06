@@ -9,6 +9,8 @@
 
   <body>
     <input type="text" name="first" value="xavi" />
+
+    <script src="https://unpkg.com/lodash"></script>
     <script>
       const age = 100
       const xavi = {
@@ -76,6 +78,28 @@
       // console.log(person3.first);
       // console.log(person1.first);
       // const person3 = { ...person1 };
+
+      const person3 = _.cloneDeep(person1)
+      person3.first = 'Larry'
+
+      person3.clothing.shirts = 100
+
+      const meatInventory = {
+        bacon: 2,
+        sausage: 3,
+        oyster: 10,
+      }
+
+      const veggieInventory = {
+        lettuce: 5,
+        tomatoes: 3,
+        oyster: 15,
+      }
+
+      const inventory = {
+        ...meatInventory,
+        ...veggieInventory,
+      }
     </script>
   </body>
 </html>
